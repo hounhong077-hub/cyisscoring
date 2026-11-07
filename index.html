@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🤖 ANDROID: Links to the manifest file you created -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a73e8">
+    
+    <!-- 🍏 iOS (Apple): Forces the school logo on iPhone/iPad -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR9cK7_BjbUQ4THtiR6iLjRdc3TN7o8kTPD7k91b70ixGvhTAdEYFVOnoN1TlSB2LZEX_PNoBOKDOyYtg94vVlATxh7jpWk6ngIY45Ym4S7RzwvnrEyWDDeGX5DkDqfIDCqmXcOEqjZ0x-9xaWyLZ3XOGWeb-I7mc7s93BDsynlqGNuEBRVY0zfg6akWg/s1111/CYIS%20Png.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="CYIS">
+
+    <title>Chann Yun International School</title>
+    
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+        .logo { width: 120px; height: auto; margin-bottom: 20px; }
+        .loading { color: #666; font-size: 1rem; font-weight: 500; }
+    </style>
+</head>
+<body>
+
+    <!-- Shows the logo while loading -->
+    <img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR9cK7_BjbUQ4THtiR6iLjRdc3TN7o8kTPD7k91b70ixGvhTAdEYFVOnoN1TlSB2LZEX_PNoBOKDOyYtg94vVlATxh7jpWk6ngIY45Ym4S7RzwvnrEyWDDeGX5DkDqfIDCqmXcOEqjZ0x-9xaWyLZ3XOGWeb-I7mc7s93BDsynlqGNuEBRVY0zfg6akWg/s1111/CYIS%20Png.png" alt="School Logo">
+    <div class="loading">Opening Web App...</div>
+
+    <script>
+        // Your Google Apps Script URL
+        var appUrl = "https://script.google.com/macros/s/AKfycbyGE1k0CWBfOxEUeI6_aXyzDxlcCauIFrbT3s6MfQtrxh8JBZsRCa-NJFMkhBfM0FtO/exec";
+
+        // Automatically redirects to the Web App immediately
+        setTimeout(function() {
+            window.location.replace(appUrl);
+        }, 300);
+    </script>
+</body>
+</html>
